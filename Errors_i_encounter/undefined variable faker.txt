@@ -1,0 +1,14 @@
+//insted of lets say 
+	return [
+            'title' => substr($faker->sentence(2), 0, -1),
+            'url' => $faker->url,
+            'description' => $faker->paragraph,
+        ];
+
+
+//it should  be written as 
+	return [
+            'title' => substr($this->faker->sentence(2), 0, -1),
+            'url' => $this->faker->url,
+            'description' => $this->faker->paragraph,
+        ];

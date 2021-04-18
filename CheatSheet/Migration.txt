@@ -1,0 +1,26 @@
+//the m stands for migrate creation
+php artisan make:model NameHere -m 
+
+
+//migration command
+php artisan migrate
+
+
+//keep track of which migraiton i have or have not run
+php artisan migrate:install
+
+
+//calls the down method inside migrations
+php artisan migrate:reset
+
+
+//roll back everydatabase migration on the instance
+php artisan migrate:refresh
+
+
+//rolls back
+php artisan migrate:rollback
+
+
+//status
+php artisan migrate:status

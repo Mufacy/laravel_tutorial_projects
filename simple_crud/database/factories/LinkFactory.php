@@ -4,7 +4,7 @@ namespace Database\Factories;
 
 use App\Models\Link;
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Faker\Generator as Faker;
+//use Faker\Generator as Faker;
 
 class LinkFactory extends Factory
 {
@@ -23,9 +23,9 @@ class LinkFactory extends Factory
     public function definition()
     {
         return [
-            'title' => substr($faker->sentence(2), 0, -1),
-            'url' => $faker->url,
-            'description' => $faker->paragraph,
+            'title' => substr($this->faker->sentence(2), 0, -1),
+            'url' => $this->faker->url,
+            'description' => $this->faker->paragraph,
         ];
     }
 }
